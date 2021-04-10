@@ -6,3 +6,5 @@ node_modules
 /setimmediate
 coverage
 package-lock.json
+
+.history
