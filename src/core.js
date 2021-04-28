@@ -72,6 +72,7 @@ Promise._onReject = null;
 Promise._noop = noop;
 
 // 马上执行的 传入两个回调函数
+// 回调主要新建promise 进行回调的注册 返回新的promise
 Promise.prototype.then = function(onFulfilled, onRejected) {
   console.log('then');
   if (this.constructor !== Promise) {
